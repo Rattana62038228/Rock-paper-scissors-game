@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- <script src="game.js"></script> -->
+    <script src="Rock–paper–scissors.js"></script>
+    <title>Document</title>
+    <style>
+        .img {
+            display: block;
+            border: 2px dashed #360;
+            height: 250px;
+            margin: 10px auto;
+            padding: 5px;
+            width: 250px;
+        }
+
+        #btnScissorsShow,
+        #btnHammerShow,
+        #btnPaperShow,p {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body style="font-size: 20px;">
+    <table style="width : 100%; text-align: center;border: 1px solid black; ">
+        <tr>
+            <td>ME</td>
+            <td>
+                <p id="resultMeAndCom"></p>
+            </td>
+            <td>BOT</td>
+        </tr>
+        <tr>
+            <td><img id="imgMe" class="img" src="https://lh3.googleusercontent.com/proxy/CMq289FDo-Sjazmn-ru1i9Kn0PhCJXZsj80l41hDQk9HXoaFztZ4Kl0WuBuMIXSvKiiycgFiMVuLI5QEDCSaxA4lm0XqudZsI0MWqHRVVw8m4_F9Mi1rJfkNnB2I6aNd0agtSA" alt=""></td>
+            <td></td>
+            <td><img id="imgCom" class="img"
+                    src="http://krutui.com/main/images/Teacher/iconfinder-8-avatar-2754583_120515.png"
+                    alt=""></td>
+        </tr>
+        <tr>
+            <td id="scoreMe">0</td>
+            <td>
+                <input id="btnScissorsShow" type="button" onclick="onBtnScissorsShowClick()" value="กรรไกร" />
+                <input id="btnHammerShow" type="button" onclick="onBtnHammerShowClick()" value="ค้อน" />
+                <input id="btnPaperShow" type="button" onclick="onBtnPaperShowClick()" value="กระดาษ" />
+            </td>
+            <td id="scoreCom">0</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
